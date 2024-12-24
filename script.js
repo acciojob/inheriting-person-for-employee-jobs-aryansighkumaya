@@ -5,7 +5,9 @@ function Person(name, age) {
 }
 
 Person.prototype.greet = function() {
-    return `Hello, my name is ${this.name}, I am ${this.age} years old.`;
+    const message = `Hello, my name is ${this.name}, I am ${this.age} years old.`;
+    console.log(message); // Keep logging for debug visibility
+    return message;       // Return value for test assertion
 };
 
 // Define the Employee class
@@ -18,7 +20,9 @@ Employee.prototype = Object.create(Person.prototype); // Inherit from Person
 Employee.prototype.constructor = Employee;
 
 Employee.prototype.jobGreet = function() {
-    return `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
+    const message = `Hello, my name is ${this.name}, I am ${this.age} years old, and my job title is ${this.jobTitle}.`;
+    console.log(message); // Keep logging for debug visibility
+    return message;       // Return value for test assertion
 };
 
 // Do not change code below this line
