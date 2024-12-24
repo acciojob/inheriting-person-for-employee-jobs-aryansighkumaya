@@ -24,4 +24,3 @@ class Employee extends Person {
 // Do not change code below this line
 window.Person = Person;
 window.Employee = Employee;
-
